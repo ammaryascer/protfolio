@@ -13,6 +13,7 @@ const navLinks = [
     { name: "Experience", href: "#experience" },
     { name: "Qualifications", href: "#qualifications" },
     { name: "Activities", href: "#projects" },
+    { name: "Testimonials", href: "#testimonials" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -39,7 +40,7 @@ export function Header() {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-bold tracking-tighter">
-                    Ammar<span className="text-blue-600">.</span>
+                    Ammar
                 </Link>
 
                 {/* Desktop Nav */}

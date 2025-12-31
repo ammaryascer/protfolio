@@ -79,5 +79,39 @@ export const portfolioData = {
         { year: "2015", title: "ACHIEVE BRIGHT CAREER conference", issuer: "AUC" },
         { year: "2014", title: "Full FIRST AIDS course", issuer: "Giza Pharmacists' Syndicate" },
         { year: "2013-2015", title: "SCIENCE OF FUTURE conference", issuer: "Faculty of Pharmacy, ASU" }
+    ],
+    testimonials: [
+        {
+            name: "Sarah Jenkins",
+            role: "Supervisor",
+            company: "LanguageLine Solutions",
+            content: "Ammar consistently demonstrates exceptional medical terminology knowledge and cultural sensitivity. His ability to navigate complex medical scenarios with precision is outstanding."
+        },
+        {
+            name: "Dr. Ahmed Hassan",
+            role: "Chief Pharmacist",
+            company: "19011 Pharmacies",
+            content: "A dedicated professional who combines pharmaceutical expertise with excellent communication skills. Ammar was a key asset to our team in providing patient counseling."
+        },
+        {
+            name: "Michael Chen",
+            role: "Operations Manager",
+            company: "GLOBO",
+            content: "Reliable, professional, and accurate. Ammar has maintained one of the highest quality ratings in our Arabic interpretation team."
+        }
+    ],
+    languages: [
+        {
+            language: "Arabic",
+            proficiency: "Native",
+            level: 100,
+            description: "Medical & General (Native)"
+        },
+        {
+            language: "English",
+            proficiency: "Fluent",
+            level: 95,
+            description: "Medical Terminology Specialist"
+        }
     ]
 };
