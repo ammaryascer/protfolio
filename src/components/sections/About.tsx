@@ -17,7 +17,7 @@ export function About() {
                     <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
 
                     <div className="flex flex-col md:flex-row items-center gap-12">
-                        <div className="w-64 h-64 shrink-0 relative rotate-3 hover:rotate-0 transition-transform duration-300">
+                        <div className="w-72 h-72 shrink-0 relative rotate-3 hover:rotate-0 transition-transform duration-300">
                             <img
                                 src={`${BASE_PATH}/avatar.png?v=3`}
                                 alt="Ammar Mohammad"
