@@ -64,7 +64,9 @@ export const portfolioData = {
                 "Delivered accurate and bilingual medical interpretation while adhering to clinical terminology standards.",
                 "Maintained strict privacy, ethical conduct, and regulatory compliance (HIPAA)."
             ]
-        },
+        }
+    ],
+    leadership: [
         {
             role: "National and Local Officer",
             company: "Egyptian Pharmaceutical Students' Federation (EPSF)",
@@ -77,14 +79,7 @@ export const portfolioData = {
             ]
         }
     ],
-    projects: [
-        {
-            title: "Public Health Awareness Campaigns",
-            description: "Led and implemented community-based campaigns (blood donation, hepatitis, breast cancer) improving health literacy.",
-            tags: ["Public Health", "Leadership", "Volunteering"],
-            link: "#",
-            image: `${BASE_PATH}/epsf groub image.jpg`
-        },
+    international: [
         {
             title: "Student Exchange Program",
             description: "Coordinated exchange activities, supporting incoming international students and promoting intercultural mobility.",
@@ -92,6 +87,11 @@ export const portfolioData = {
             link: "#",
             image: `${BASE_PATH}/epsf i am taking image.jpg`
         }
+    ],
+    objectives: [
+        "To leverage pharmaceutical expertise and public health leadership to drive equitable healthcare outcomes.",
+        "To foster international collaboration and cross-cultural understanding in medical practice.",
+        "To lead sustainable health initiatives that address global challenges and community needs."
     ],
     qualifications: [
         { year: "Active", title: "Eastern Mediterranean Pharmaceutical Symposium (EMPS)", issuer: "Organizer/Participant" },

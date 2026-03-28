@@ -3,20 +3,21 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { SectionReveal } from "@/components/common/SectionReveal";
-import { Quote } from "lucide-react";
+import { Target } from "lucide-react";
 
-export function Testimonials() {
+export function Objectives() {
     return (
-        <section id="testimonials" className="py-20 bg-gray-50 dark:bg-black/20">
+        <section id="objectives" className="py-20 bg-gray-50 dark:bg-black/20">
             <div className="container mx-auto px-4">
                 <SectionReveal>
                     <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-fuchsia-500">
-                        Testimonials
+                        Future Direction & Action Agenda
                     </h2>
                 </SectionReveal>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
-                    {portfolioData.testimonials.map((testimonial, index) => (
+                    {/* @ts-ignore - objectives exists now */}
+                    {portfolioData.objectives.map((objective: string, index: number) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
@@ -29,28 +30,18 @@ export function Testimonials() {
                                 {/* Decorative Background Accent */}
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-purple-500/5 to-fuchsia-500/5 rounded-bl-full pointer-events-none transition-transform duration-500 group-hover:scale-110" />
 
-                                <Quote size={48} className="text-purple-100 dark:text-purple-900/30 absolute top-6 right-6 transition-transform duration-300 group-hover:rotate-12" />
-
                                 <div className="relative z-10 flex flex-col h-full">
-                                    <div className="flex-1 mb-6">
-                                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed italic relative z-10">
-                                            &quot;{testimonial.content}&quot;
-                                        </p>
+                                    <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                                        <Target size={24} />
                                     </div>
 
-                                    <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-linear-to-r from-purple-500 to-fuchsia-500 flex items-center justify-center text-white font-bold text-sm shadow-md">
-                                            {testimonial.name.charAt(0)}
-                                        </div>
-                                        <div>
-                                            <div className="font-bold text-gray-900 dark:text-white text-sm">
-                                                {testimonial.name}
-                                            </div>
-                                            <div className="text-xs text-purple-600 dark:text-purple-400 font-medium">
-                                                {testimonial.role}, {testimonial.company}
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                                        Objective {index + 1}
+                                    </h3>
+
+                                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed flex-1">
+                                        {objective}
+                                    </p>
                                 </div>
                             </div>
                         </motion.div>

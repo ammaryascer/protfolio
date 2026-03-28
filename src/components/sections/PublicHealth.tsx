@@ -24,8 +24,8 @@ export function PublicHealth() {
                     transition={{ duration: 0.5 }}
                     className="mb-12 text-center"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500">
-                        Public Health Initiatives
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-fuchsia-500">
+                        Public Health & SDG Impact
                     </h2>
                     <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                         Leading nationwide campaigns and community-based programs to promote health equity, awareness, and well-being.
@@ -67,11 +67,11 @@ function PublicHealthCard({ project, index, onOpen }: { project: any, index: num
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
-            className="group flex flex-col justify-between bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 overflow-hidden h-full transition-all duration-300 hover:scale-[1.05] hover:ring-4 hover:ring-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/10"
+            className="group flex flex-col justify-between bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 overflow-hidden h-full transition-all duration-300 hover:scale-[1.05] hover:ring-4 hover:ring-purple-500/20 hover:shadow-2xl hover:shadow-purple-500/10"
         >
             <div className="p-6 md:p-8 flex-1 flex flex-col relative overflow-hidden">
                 {/* Decorative Background Accent */}
-                <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-blue-500/5 to-cyan-500/5 rounded-bl-full pointer-events-none transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-purple-500/5 to-fuchsia-500/5 rounded-bl-full pointer-events-none transition-transform duration-500 group-hover:scale-110" />
 
                 <div className="relative z-10 flex flex-col h-full">
                     {/* SDG Badge */}
@@ -88,7 +88,7 @@ function PublicHealthCard({ project, index, onOpen }: { project: any, index: num
                     </h3>
 
                     {project.subtitle && (
-                        <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-3">
+                        <p className="text-sm text-purple-600 dark:text-purple-400 font-medium mb-3">
                             {project.subtitle}
                         </p>
                     )}
@@ -99,26 +99,26 @@ function PublicHealthCard({ project, index, onOpen }: { project: any, index: num
 
                     <div className="mt-auto space-y-2 text-xs text-gray-500 dark:text-gray-500 border-t border-gray-100 dark:border-gray-800 pt-4">
                         <div className="flex items-center gap-2">
-                            <Users className="w-3.5 h-3.5 text-blue-500" />
+                            <Users className="w-3.5 h-3.5 text-purple-500" />
                             <span className="font-medium text-gray-700 dark:text-gray-300">Role:</span>
                             <span className="line-clamp-1">{project.role}</span>
                         </div>
                         <div className="flex items-center gap-2">
-                            <Calendar className="w-3.5 h-3.5 text-blue-500" />
+                            <Calendar className="w-3.5 h-3.5 text-purple-500" />
                             <span className="font-medium text-gray-700 dark:text-gray-300">Duration:</span>
                             {project.duration}
                         </div>
-                        <div className="flex items-center gap-2">
-                            <Target className="w-3.5 h-3.5 text-blue-500" />
-                            <span className="font-medium text-gray-700 dark:text-gray-300">Scope:</span>
-                            <span className="line-clamp-1">{project.scope}</span>
+                        <div className="flex items-start gap-2">
+                            <Target className="w-3.5 h-3.5 text-purple-500 mt-0.5 flex-shrink-0" />
+                            <span className="font-medium text-gray-700 dark:text-gray-300 flex-shrink-0">Scope:</span>
+                            <span>{project.scope}</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Action Buttons Row */}
-            <div className="p-4 bg-gray-50 dark:bg-black/20 border-t border-gray-100 dark:border-gray-800 grid grid-cols-3 gap-2">
+            <div className="p-4 bg-gray-50 dark:bg-black/20 border-t border-gray-100 dark:border-gray-800 flex flex-wrap gap-2 justify-center">
                 <ActionButton label="Details" icon={<FileText size={16} />} onClick={() => onOpen('details')} />
                 <ActionButton label="Gallery" icon={<ImageIcon size={16} />} onClick={() => onOpen('gallery')} />
                 <ActionButton label="Links" icon={<LinkIcon size={16} />} onClick={() => onOpen('evidence')} />
@@ -140,7 +140,7 @@ function ProjectModal({ project, activeTab, setActiveTab, onClose }: { project: 
                 <div className="p-6 border-b border-gray-100 dark:border-gray-800 flex justify-between items-start bg-gray-50/50 dark:bg-gray-800/50">
                     <div>
                         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{project.title}</h3>
-                        <p className="text-blue-600 dark:text-blue-400 text-sm font-medium flex items-center gap-2">
+                        <p className="text-purple-600 dark:text-purple-400 text-sm font-medium flex items-center gap-2">
                             {project.sdg}
                         </p>
                     </div>
@@ -165,13 +165,13 @@ function ProjectModal({ project, activeTab, setActiveTab, onClose }: { project: 
 
                             <div className="grid md:grid-cols-2 gap-8">
                                 <div>
-                                    <h4 className="text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
+                                    <h4 className="text-sm font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-3 flex items-center gap-2">
                                         <Target size={16} /> Program Design
                                     </h4>
                                     <ul className="space-y-2">
                                         {project.details.actions.map((action: string, i: number) => (
                                             <li key={i} className="flex gap-3 text-sm text-gray-700 dark:text-gray-300">
-                                                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 flex-shrink-0" />
+                                                <span className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-1.5 flex-shrink-0" />
                                                 <span>{action}</span>
                                             </li>
                                         ))}
@@ -196,7 +196,7 @@ function ProjectModal({ project, activeTab, setActiveTab, onClose }: { project: 
                             <div className="grid md:grid-cols-2 gap-8 pt-4 border-t border-gray-100 dark:border-gray-800">
                                 <DetailBlock title="Sustainability" content={project.details.sustainability} />
                                 <div>
-                                    <h4 className="text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-3">Partnerships</h4>
+                                    <h4 className="text-sm font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-3">Partnerships</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {project.details.partnerships.map((partner: string, i: number) => (
                                             <span key={i} className="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg text-xs font-semibold text-gray-600 dark:text-gray-300 shadow-sm">
@@ -215,8 +215,7 @@ function ProjectModal({ project, activeTab, setActiveTab, onClose }: { project: 
                             {project.gallery.map((item: string, i: number) => (
                                 <div key={i} className="group aspect-video bg-white dark:bg-gray-800 rounded-xl relative overflow-hidden shadow-sm border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center p-4">
                                     <ImageIcon className="w-12 h-12 text-gray-300 dark:text-gray-600 mb-3 group-hover:scale-110 transition-transform duration-300" />
-                                    <p className="text-sm font-medium text-gray-500 dark:text-gray-400 text-center">{item}</p>
-                                </div>
+                                    <p className="text-sm font-medium text-gray-500 dark:text-gray-400 text-center">{item}</p>        </div>
                             ))}
                         </div>
                     )}
@@ -225,12 +224,12 @@ function ProjectModal({ project, activeTab, setActiveTab, onClose }: { project: 
                     {activeTab === 'evidence' && (
                         <div className="grid gap-4 animate-in fade-in slide-in-from-bottom-4 duration-300 max-w-2xl mx-auto">
                             {project.evidence.map((item: string, i: number) => (
-                                <div key={i} className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-md transition-all group cursor-pointer">
-                                    <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                <div key={i} className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 hover:shadow-md transition-all group cursor-pointer">
+                                    <div className="w-10 h-10 rounded-full bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center text-purple-600 dark:text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                                         <Award size={20} />
                                     </div>
                                     <span className="font-medium text-gray-700 dark:text-gray-200 flex-1">{item}</span>
-                                    <ChevronRight className="text-gray-300 group-hover:text-blue-500 transition-colors" size={20} />
+                                    <ChevronRight className="text-gray-300 group-hover:text-purple-500 transition-colors" size={20} />
                                 </div>
                             ))}
                         </div>
@@ -245,7 +244,7 @@ function ActionButton({ label, icon, onClick }: { label: string, icon: React.Rea
     return (
         <button
             onClick={onClick}
-            className="flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-200 dark:hover:border-blue-800 transition-all active:scale-95"
+            className="flex items-center justify-center gap-2 px-3 py-2.5 sm:py-2 rounded-lg text-xs font-semibold bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-purple-50 dark:hover:bg-purple-900/20 hover:text-purple-600 dark:hover:text-purple-400 hover:border-purple-200 dark:hover:border-purple-800 transition-all active:scale-95"
         >
             {icon}
             {label}
@@ -258,8 +257,8 @@ function TabButton({ label, icon, active, onClick }: { label: string, icon: Reac
         <button
             onClick={onClick}
             className={`flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium border-b-2 transition-colors ${active
-                    ? "border-blue-500 text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/10"
-                    : "border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
+                ? "border-purple-500 text-purple-600 dark:text-purple-400 bg-purple-50/50 dark:bg-purple-900/10"
+                : "border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
                 }`}
         >
             <span className="hidden sm:inline">{icon}</span>

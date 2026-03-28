@@ -39,10 +39,10 @@ export function Skills() {
                             key={skill}
                             variants={item}
                             whileHover={{ scale: 1.05, y: -2 }}
-                            className="group relative px-6 py-3 bg-white/50 dark:bg-zinc-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-white/10 rounded-xl shadow-sm hover:shadow-lg hover:border-blue-500/30 transition-all duration-300 cursor-default"
+                            className="group relative px-6 py-3 bg-white/50 dark:bg-zinc-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-white/10 rounded-xl shadow-sm hover:shadow-lg hover:border-purple-500/30 transition-all duration-300 cursor-default"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity duration-300" />
-                            <span className="relative font-medium bg-clip-text text-gray-700 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-fuchsia-500/10 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity duration-300" />
+                            <span className="relative font-medium bg-clip-text text-gray-700 dark:text-gray-200 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                                 {skill}
                             </span>
                         </motion.div>

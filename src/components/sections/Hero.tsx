@@ -11,8 +11,8 @@ export function Hero() {
         <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden py-10 md:py-20">
             {/* Background elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-[10%] left-[5%] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[100px]" />
-                <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-[100px]" />
+                <div className="absolute top-[10%] left-[5%] w-[300px] h-[300px] bg-purple-600/20 rounded-full blur-[100px]" />
+                <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-fuchsia-600/20 rounded-full blur-[100px]" />
             </div>
 
             <div className="container px-4 z-10">
@@ -27,11 +27,11 @@ export function Hero() {
                     >
                         <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px]">
                             {/* Decorative Frame Elements */}
-                            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-[2rem] rotate-3 opacity-40 blur-lg animate-pulse" />
-                            <div className="absolute -inset-1 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-[2.1rem] opacity-20" />
+                            <div className="absolute inset-0 bg-gradient-to-tr from-purple-600 to-fuchsia-500 rounded-[2rem] rotate-3 opacity-40 blur-lg animate-pulse" />
+                            <div className="absolute -inset-1 bg-gradient-to-tr from-purple-600 to-fuchsia-500 rounded-[2.1rem] opacity-20" />
 
                             {/* Main Image Container */}
-                            <div className="relative w-full h-full bg-white dark:bg-gray-900 rounded-[2rem] p-3 shadow-2xl shadow-blue-900/20 ring-1 ring-white/10 overflow-hidden transform transition-transform hover:scale-[1.01] duration-500">
+                            <div className="relative w-full h-full bg-white dark:bg-gray-900 rounded-[2rem] p-3 shadow-2xl shadow-purple-900/40 ring-1 ring-white/10 overflow-hidden transform transition-transform hover:scale-[1.01] duration-500">
                                 <img
                                     src={`${BASE_PATH}/Ammar-P.P1x1-B.jpeg`}
                                     alt="Ammar Yasser AbdAllah"
@@ -66,7 +66,7 @@ export function Hero() {
                                 initial={{ opacity: 0, scale: 0.95, y: 10 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 transition={{ delay: 0.4 }}
-                                className="text-[3.5rem] sm:text-[5rem] lg:text-[7.5rem] leading-[0.9] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 tracking-tight block w-full -ml-[0.05em] py-2"
+                                className="text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[7.5rem] leading-[1] md:leading-[0.9] font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-fuchsia-400 tracking-normal md:tracking-tight block w-full -ml-[0.05em] py-2"
                             >
                                 Mohammad
                             </motion.h1>
@@ -77,9 +77,9 @@ export function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5 }}
-                            className="bg-blue-50/50 dark:bg-white/5 border border-blue-100 dark:border-white/10 rounded-xl p-3 md:p-4 backdrop-blur-sm w-full"
+                            className="bg-purple-50/50 dark:bg-white/5 border border-purple-100 dark:border-white/10 rounded-xl p-3 md:p-4 backdrop-blur-sm w-full"
                         >
-                            <p className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-blue-900 dark:text-blue-100 leading-relaxed whitespace-nowrap overflow-hidden text-ellipsis w-full text-center md:text-left">
+                            <p className="text-sm md:text-base lg:text-lg font-medium text-purple-900 dark:text-purple-100 leading-relaxed w-full text-center md:text-left">
                                 {portfolioData.personalInfo.title}
                             </p>
                         </motion.div>
@@ -91,9 +91,9 @@ export function Hero() {
                             transition={{ delay: 0.6 }}
                             className="space-y-4"
                         >
-                            <div className="flex items-start gap-3 text-gray-600 dark:text-gray-400">
-                                <Quote className="w-8 h-8 text-blue-400/50 flex-shrink-0 rotate-180" />
-                                <p className="text-lg italic leading-relaxed font-light">
+                            <div className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
+                                <Quote className="w-8 h-8 text-purple-400/70 flex-shrink-0 rotate-180" />
+                                <p className="text-base md:text-lg italic leading-relaxed font-medium">
                                     Bridging Languages, Connecting Lives. A proven impact on profession and society through leadership and health advocacy.
                                 </p>
                             </div>

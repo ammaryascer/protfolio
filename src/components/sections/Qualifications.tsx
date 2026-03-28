@@ -23,7 +23,7 @@ export function Qualifications() {
                             transition={{ delay: index * 0.05 }} // Faster stagger for list
                             className="bg-white dark:bg-zinc-900 p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow flex gap-4 items-start"
                         >
-                            <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-full text-blue-600 shrink-0">
+                            <div className="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-full text-purple-600 shrink-0">
                                 <Award size={20} />
                             </div>
 
@@ -36,7 +36,7 @@ export function Qualifications() {
                                         <Calendar size={14} />
                                         {qual.year}
                                     </span>
-                                    <span className="font-medium text-blue-600 dark:text-blue-400">
+                                    <span className="font-medium text-purple-600 dark:text-purple-400">
                                         @{qual.issuer}
                                     </span>
                                 </div>

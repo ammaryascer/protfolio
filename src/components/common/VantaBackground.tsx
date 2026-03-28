@@ -33,12 +33,12 @@ export function VantaBackground({ children }: { children: React.ReactNode }) {
                     gyroControls: false,
                     minHeight: 200.00,
                     minWidth: 200.00,
-                    skyColor: 0x68b8d9,
-                    cloudColor: 0xadc1de,
-                    cloudShadowColor: 0x183550,
-                    sunColor: 0xff9919,
-                    sunGlareColor: 0xff6633,
-                    sunlightColor: 0xff9933,
+                    skyColor: 0x15092a,
+                    cloudColor: 0x2a1154,
+                    cloudShadowColor: 0x090214,
+                    sunColor: 0xa855f7,
+                    sunGlareColor: 0xc084fc,
+                    sunlightColor: 0x9333ea,
                 });
                 setVantaEffect(effect);
             } catch (error) {

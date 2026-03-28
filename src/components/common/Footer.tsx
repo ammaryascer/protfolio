@@ -12,7 +12,7 @@ export function Footer() {
                         href="https://www.facebook.com/ammaryascer"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300"
+                        className="p-2 bg-purple-100 text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300"
                         title="Facebook"
                     >
                         <Facebook size={20} />
@@ -39,7 +39,7 @@ export function Footer() {
                         href="https://www.linkedin.com/in/ammaryascer/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-700 hover:text-white transition-all duration-300"
+                        className="p-2 bg-purple-50 text-purple-700 rounded-full hover:bg-purple-700 hover:text-white transition-all duration-300"
                         title="LinkedIn"
                     >
                         <Linkedin size={20} />

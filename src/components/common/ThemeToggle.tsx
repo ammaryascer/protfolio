@@ -27,7 +27,7 @@ export function ThemeToggle() {
                     size={20}
                 />
                 <Moon
-                    className="absolute inset-0 rotate-90 scale-0 transition-all duration-300 dark:rotate-0 dark:scale-100 text-blue-400"
+                    className="absolute inset-0 rotate-90 scale-0 transition-all duration-300 dark:rotate-0 dark:scale-100 text-purple-400"
                     size={20}
                 />
             </div>

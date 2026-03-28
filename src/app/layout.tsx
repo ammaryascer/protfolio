@@ -7,6 +7,7 @@ import { PageTransition } from "@/components/common/PageTransition";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { VantaBackground } from "@/components/common/VantaBackground";
 import { MaintenanceNotice } from "@/components/common/MaintenanceNotice";
+import { CustomCursor } from "@/components/common/CustomCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,7 @@ export default function RootLayout({
           </VantaBackground>
 
           <Header />
+          <CustomCursor />
           <MaintenanceNotice />
           <main className="flex-1 pt-20 relative z-10">
             <PageTransition>

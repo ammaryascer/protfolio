@@ -28,7 +28,7 @@ export function Languages() {
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                                     {lang.language}
                                 </h3>
-                                <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                                <span className="text-sm font-medium text-purple-600 dark:text-purple-400">
                                     {lang.proficiency}
                                 </span>
                             </div>
@@ -39,7 +39,7 @@ export function Languages() {
                                     whileInView={{ width: `${lang.level}%` }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 1, delay: 0.2 }}
-                                    className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"
+                                    className="h-full bg-gradient-to-r from-purple-500 to-fuchsia-500 rounded-full"
                                 />
                             </div>
 

@@ -10,11 +10,13 @@ import { BASE_PATH } from "@/lib/constants";
 
 const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Qualifications", href: "#qualifications" },
-    { name: "Activities", href: "#projects" },
-    { name: "Testimonials", href: "#testimonials" },
+    { name: "Leadership", href: "#leadership" },
+    { name: "Public Health", href: "#public-health" },
+    { name: "Occupation", href: "#experience" },
+    { name: "Credentials", href: "#education" },
+    { name: "Academic", href: "#academic" },
+    { name: "International", href: "#international" },
+    { name: "Objectives", href: "#objectives" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -39,16 +41,16 @@ export function Header() {
                     : "bg-transparent py-6"
             )}
         >
-            <div className="container mx-auto px-4 flex justify-between items-center">
+            <div className="container mx-auto px-6 md:px-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-3">
-                    <div className="relative w-10 h-10 rounded-full overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm">
+                    <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm flex-shrink-0">
                         <img
                             src={`${BASE_PATH}/Ammar-P.P1x1-B.jpeg`}
                             alt="Ammar"
                             className="w-full h-full object-cover"
                         />
                     </div>
-                    <span className="text-xl font-bold tracking-tight">Ammar</span>
+                    <span className="text-lg sm:text-xl font-bold tracking-tight">Ammar</span>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -57,7 +59,7 @@ export function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium hover:text-blue-600 transition-colors"
+                            className="text-sm font-medium hover:text-purple-600 transition-colors"
                         >
                             {link.name}
                         </Link>
@@ -65,7 +67,7 @@ export function Header() {
                     <ThemeToggle />
                     <Link
                         href="#contact"
-                        className="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium hover:bg-blue-700 transition w-fit"
+                        className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-medium hover:bg-purple-700 transition w-fit"
                     >
                         Let's Talk
                     </Link>
